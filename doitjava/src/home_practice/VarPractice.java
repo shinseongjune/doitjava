@@ -19,6 +19,9 @@ public class VarPractice {
 		double yNum = 1;
 		System.out.println("zNum = " + zNum + ", yNum = " + yNum);
 		
+		zNum++;
+		--yNum;
+		System.out.println("zNum = " + zNum + ", yNum = " + yNum);
 	}
 
 }
