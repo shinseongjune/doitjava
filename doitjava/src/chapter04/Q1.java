@@ -40,6 +40,7 @@ public class Q1 {
 		default:
 			System.out.println("오류입니다.");
 		}
+		sc.close();
 	}
 
 }
