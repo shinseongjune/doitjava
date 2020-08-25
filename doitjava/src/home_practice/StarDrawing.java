@@ -21,9 +21,6 @@ public class StarDrawing {
 			for(int j = stars; j > 0; j--) {
 				System.out.print("*");
 			}
-			for(int j = spaces; j > 0; j--) {
-				System.out.print(" ");
-			}
 			System.out.println();
 			linenum--;
 			spaces--;
