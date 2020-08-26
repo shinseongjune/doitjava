@@ -22,7 +22,6 @@ public class StarDrawing {
 				System.out.print("*");
 			}
 			System.out.println();
-			linenum--;
 			spaces--;
 			stars += 2;
 		}
