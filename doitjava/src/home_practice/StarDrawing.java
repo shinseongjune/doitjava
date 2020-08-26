@@ -14,7 +14,7 @@ public class StarDrawing {
 		linenum = sc.nextInt();
 		spaces = linenum - 1;
 		
-		for(int i = linenum; i > 0; i--) {
+		for(int i = 0; i < linenum; i++) {
 			for(int j = spaces; j > 0; j--) {
 				System.out.print(" ");
 			}
@@ -22,8 +22,13 @@ public class StarDrawing {
 				System.out.print("*");
 			}
 			System.out.println();
-			spaces--;
-			stars += 2;
+			if(i<(linenum/2)) {
+				spaces--;
+				stars += 2;	
+			} else {
+				spaces++;
+				stars -= 2;
+			}
 		}
 		sc.close();
 		
