@@ -30,6 +30,12 @@ public class StarDrawing {
 				stars -= 2;
 			}
 		}
+		if((linenum % 2) == 0) {
+			for(int j = spaces; j > 0; j--) {
+				System.out.print(" ");
+			}
+			System.out.print("*");
+		}
 		sc.close();
 		
 		
