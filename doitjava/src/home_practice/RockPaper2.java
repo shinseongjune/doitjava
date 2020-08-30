@@ -13,6 +13,7 @@ public class RockPaper2 {
 		
 		Scanner sc = new Scanner(System.in);
 		String userChoice = "";
+		System.out.println("가위바위보 게임입니다.");
 		while(true) {
 			do {
 			System.out.print("가위 바위 > ");
