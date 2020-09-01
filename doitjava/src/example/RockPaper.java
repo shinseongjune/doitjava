@@ -55,7 +55,7 @@ public class RockPaper {
 			System.out.println("--------------------");
 			System.out.println("Á¡¼ö : " + score + " ¸ñ¼û : " + life);
 			System.out.println("--------------------");
-			if(life == GA) {
+			if(life == 0) {
 				System.out.println("¡ºGAME OVER¡»");
 				break;
 			}
