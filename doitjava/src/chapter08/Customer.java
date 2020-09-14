@@ -8,7 +8,17 @@ public class Customer {
 	double bonusRatio;
 	
 	public Customer() {
-		customerGrade = "SILVER";
+		initCustomer();
+	}
+	
+	public Customer(int customerID, String  customerName) {
+		this.customerID = customerID;
+		this.customerName = customerName;
+		initCustomer();
+	}
+	
+	private void initCustomer() {
+		customerGrade = "Silver";
 		bonusRatio = 0.01;
 	}
 	
