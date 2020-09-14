@@ -1,10 +1,10 @@
 package chapter08;
 
-public class VIPCustomer extends Customer{
+public class GoldCustomer extends Customer{
 	private int agentID;
 	double saleRatio;
 	
-	public VIPCustomer(int customerID, String customerName, int agentID) {
+	public GoldCustomer(int customerID, String customerName, int agentID) {
 		super(customerID, customerName);
 		customerGrade = "VIP";
 		bonusRatio = 0.05;
@@ -12,7 +12,7 @@ public class VIPCustomer extends Customer{
 		this.agentID = agentID;
 	}
 	
-	public VIPCustomer() {
+	public GoldCustomer() {
 	}
 	
 	@Override
