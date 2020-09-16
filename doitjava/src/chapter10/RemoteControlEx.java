@@ -7,11 +7,15 @@ public class RemoteControlEx {
 		
 		rc = new Television();
 		rc.turnOn();
+		rc.setMute(true);
 		rc.turnOff();
 		
 		rc = new Audio();
 		rc.turnOn();
+		rc.setMute(false);
 		rc.turnOff();
+		
+		RemoteControl.changeBattery();
 	}
 
 }
