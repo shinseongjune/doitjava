@@ -18,16 +18,15 @@ public class TestMyNumber {
 			
 			@Override
 			public int getMax(int num1, int num2) {
-				return (num1 >= num2) ? num1 : num2;
+				int result = (num1 >= num2) ? num1 : num2;
+				return result;
 			}
 		};
 		result = in2.getMax(num1, num2);
 		System.out.println("in2: " + result);
 		
 		//람다식 사용
-		MyNumber in3 = (int x, int y) -> {
-			return (x >= y) ? x : y;
-		};
+		MyNumber in3 = (x, y) -> x >= y ? x : y;
 		result = in3.getMax(num1, num2);
 		System.out.println("in3: " + result);
 	}
