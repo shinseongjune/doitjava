@@ -11,18 +11,15 @@ public class Play {
 		while(true) {
 			us.input();
 			CompareArr comp = new CompareArr(t,us);
-			
+
+			Counting c = new Counting();
 			if(comp.strike==3) {
 				System.out.println("정답은 [" + t.target[0] + ", " + t.target[1] + ", " + t.target[2] + "] 입니다.");
-				System.out.println(c.cnt + "회만에 승리했습니다!");
+				System.out.println(Counting.cnt + "회만에 승리했습니다!");
 				break;
-			Counting c = new Counting();
-			if(c.cnt == 12) {
-				System.out.println("정답은 [" + t.target[0] + ", " + t.target[1] + ", " + t.target[2] + "] 입니다.");
-			}
 			}
 			System.out.println(comp.strike + " 스트라이크, " + comp.ball + " 볼");
-		}
 		us.cl();
+		}
 	}
 }
