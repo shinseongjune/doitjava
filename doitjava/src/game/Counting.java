@@ -2,13 +2,11 @@ package game;
 
 public class Counting {
 	static int cnt=1;
-	
-	Counting() {
+	static int gmover = 0;
+	static void count() {
 		cnt++;
-		if(cnt==12) {
-			System.out.println("¦£+-+-+-+-+¦¤");
-			System.out.println("+Game Over+");
-			System.out.println("¦¦+-+-+-+-+¦¥");
+		if(cnt==13) {
+			gmover = 1;
 		}
 	}
 }
