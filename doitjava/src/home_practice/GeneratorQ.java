@@ -33,12 +33,17 @@ public class GeneratorQ {
 		System.out.println("-----------------------------------");
 		System.out.println();
 		
+		long start = System.nanoTime();
+		
 		k = 0;
-//		for(Iterator<Integer> it = all.iterator();it.hasNext();) {
-//			k += it.next();
-//		}
-		k = all.stream().mapToInt(x->x.intValue()).sum();
-
+		for(Iterator<Integer> it = all.iterator();it.hasNext();) {
+			k += it.next();
+		}
+//		k = all.stream().mapToInt(x->x.intValue()).sum();
+		
+		long end = System.nanoTime();
+		
 		System.out.println("answer : " + k);
+		System.out.println("½Ã°£: " + (end - start));
 	}
 }
