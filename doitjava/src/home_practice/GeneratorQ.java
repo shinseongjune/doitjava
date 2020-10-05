@@ -2,6 +2,7 @@ package home_practice;
 
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.stream.Collectors;
 
 public class GeneratorQ {
 	public static void main(String[] args) {
@@ -33,9 +34,10 @@ public class GeneratorQ {
 		System.out.println();
 		
 		k = 0;
-		for(Iterator<Integer> it = all.iterator();it.hasNext();) {
-			k += it.next();
-		}
+//		for(Iterator<Integer> it = all.iterator();it.hasNext();) {
+//			k += it.next();
+//		}
+		k = all.stream().mapToInt(x->x.intValue()).sum();
 
 		System.out.println("answer : " + k);
 	}
