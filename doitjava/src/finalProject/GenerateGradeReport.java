@@ -51,7 +51,7 @@ public class GenerateGradeReport {
 		ArrayList<Score> scoreList = student.getScoreList();
 		int majorId = student.getMajorSubject().getSubjectId();
 		
-		GradeEvaluation[] gradeEvaluation = {new BasicEvaluation(), new MajorEvaluation()};
+		GradeEvaluation[] gradeEvaluation = {new BasicEvaluation(), new MajorEvaluation(), new PassFailEvaluation()};
 		
 		for(int i=0; i<scoreList.size();i++) {
 			Score score = scoreList.get(i);
