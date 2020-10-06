@@ -8,9 +8,9 @@ public class FileOutputStreamTest0 {
 	public static void main(String[] args) {
 		FileOutputStream fos = null;
 		try {
-			fos = new FileOutputStream("input2.txt");
-			for(int i=65; i<65+27;i++) {
-				fos.write((char)i);
+			fos = new FileOutputStream("a.zip");
+			for(int i=0; i<5_000_000;i++) {
+				fos.write((char)(int)(Math.random() * 70000));
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -22,5 +22,6 @@ public class FileOutputStreamTest0 {
 					e.printStackTrace();
 				}
 		}
+		System.out.println("파일이 생성되었습니다.");
 	}
 }
