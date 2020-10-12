@@ -30,16 +30,16 @@ public class WeirdPrimeNumQ {
 			int num1 = pNums.get(i) + 3330;
 			int num2 = num1 + 3330;
 			prime = true;
-			for(int j = 2; j < num1/2; j++) {
+			for (int j = 2; j < num1 / 2; j++) {
 				if (num1 % j == 0)
 					prime = false;
 			}
-			for(int j = 2; j < num2/2; j++) {
+			for (int j = 2; j < num2 / 2; j++) {
 				if (num2 % j == 0)
 					prime = false;
 			}
 			if (prime) {
-				pNums2.add(pNums.get(i));	
+				pNums2.add(pNums.get(i));
 			}
 		}
 		int answer1 = 0;
@@ -49,19 +49,17 @@ public class WeirdPrimeNumQ {
 		int a11;
 		String a2;
 		String a3;
-		int sizeOfSet = 0;
-		int sizeOfSet2 = 0;
 		HashSet<String> a1Set = new HashSet<>();
 		HashSet<String> a2Set = new HashSet<>();
 		HashSet<String> a3Set = new HashSet<>();
 		Iterator<Integer> it = pNums2.iterator();
-		for(int l = 0; it.hasNext(); l++) {
+		for (; it.hasNext();) {
 			a1 = it.next().toString();
 			a11 = Integer.valueOf(a1) + 3330;
 			a2 = Integer.toString(a11);
 			a11 = a11 + 3330;
 			a3 = Integer.toString(a11);
-			for(int j = 0; j < 4; j++) {
+			for (int j = 0; j < 4; j++) {
 				a1Set.add(a1.split("")[j]);
 				a2Set.add(a2.split("")[j]);
 				a3Set.add(a3.split("")[j]);
@@ -71,7 +69,7 @@ public class WeirdPrimeNumQ {
 				answer1 = Integer.valueOf(a1);
 				answer2 = answer1 + 3330;
 				answer3 = answer2 + 3330;
-				System.out.println("정답: " + answer1 + answer2 + answer3);		
+				System.out.println("정답: " + answer1 + answer2 + answer3);
 			}
 			a1Set.clear();
 			a2Set.clear();
